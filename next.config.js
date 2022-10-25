@@ -1,8 +1,7 @@
 /**
  * @type {import('next').NextConfig}
  */
- const { withPlausibleProxy } = require('next-plausible');
- const moduleExports = withPlausibleProxy()({
+ const moduleExports = {
   env:{
     HOME_URL: process.env.SITE_URL,
   },
@@ -48,7 +47,7 @@
       }
     ];
   }
-});
+}
 
 
 module.exports = moduleExports;

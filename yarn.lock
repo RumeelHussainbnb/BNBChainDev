@@ -8897,11 +8897,6 @@
   "resolved" "https://registry.npmjs.org/neo-async/-/neo-async-2.6.2.tgz"
   "version" "2.6.2"
 
-"next-plausible@^3.2.0":
-  "integrity" "sha512-OlYcLXBG3kKd/fKMpm8SZ5IkUKSFm1/8t7cv6e5bewIqlpdZpdWuSrjbdJpbmutb2KPLXHzilKp09zmDGjy9KQ=="
-  "resolved" "https://registry.npmjs.org/next-plausible/-/next-plausible-3.2.0.tgz"
-  "version" "3.2.0"
-
 "next-sitemap@^v3.1.11":
   "integrity" "sha512-qHq/nVzqEL3Sd5N+1ZnqoY2xN4BSmgEkIlvCjFOtMMIyl8Tr/xmVZgVau/8aZsDtxoXPKG/NzdonZssvpK4Jdw=="
   "resolved" "https://registry.npmjs.org/next-sitemap/-/next-sitemap-3.1.11.tgz"
@@ -8923,7 +8918,7 @@
     "enhanced-resolve" "^5.7.0"
     "escalade" "^3.1.1"
 
-"next@*", "next@^11.1.0 || ^12.0.0", "next@^12.3.0":
+"next@*", "next@^12.2.2":
   "integrity" "sha512-GpzI6me9V1+XYtfK0Ae9WD0mKqHyzQlGq1xH1rzNIYMASo4Tkl4rTe9jSqtBpXFhOS33KohXs9ZY38Akkhdciw=="
   "resolved" "https://registry.npmjs.org/next/-/next-12.3.0.tgz"
   "version" "12.3.0"
@@ -9818,7 +9813,7 @@
     "shell-quote" "^1.6.1"
     "ws" "^7"
 
-"react-dom@*", "react-dom@^16 || ^17 || ^18", "react-dom@^16.8.0 || ^17.0.0 || ^18.0.0", "react-dom@^17.0.2 || ^18.0.0-0", "react-dom@^18.2.0", "react-dom@>= 16.8.0", "react-dom@>=17":
+"react-dom@*", "react-dom@^16 || ^17 || ^18", "react-dom@^17.0.2 || ^18.0.0-0", "react-dom@^18.2.0", "react-dom@>= 16.8.0", "react-dom@>=17":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
