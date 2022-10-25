@@ -3,9 +3,7 @@
  */
  const moduleExports = {
   env:{
-    SITE_URL: "https://main.d1aos5rwqljdla.amplifyapp.com",
-    NEXT_PUBLIC_API_ENDPOINT: "http://bnbchain-dev-portal-869386302.ap-northeast-1.elb.amazonaws.com:3001",
-    MONGODB_URI: "mongodb+srv://bnb_chain:ThisIsForBnbChain@cluster0.nmbr74z.mongodb.net/bnbzyt7891234_chain?retryWrites=true&w=majority"
+    HOME_URL: process.env.SITE_URL,
   },
   basePath: "/library",
   swcMinify: true,
@@ -49,7 +47,7 @@
       }
     ];
   }
-}
+});
 
 
 module.exports = moduleExports;
