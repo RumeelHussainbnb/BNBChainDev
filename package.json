@@ -85,6 +85,6 @@
     "fix": "fixpack",
     "lint": "next lint",
     "start": "next start",
-    "postbuild": "next-sitemap --config next-sitemap.config.js"
+    "postbuild": "next-sitemap"
   }
 }
