@@ -4,7 +4,7 @@ COPY . .
 RUN npm --clean install
 RUN npm run build
 
-EXPOSE 3000
+EXPOSE 8000
 
 ENV NODE_ENV production
 
