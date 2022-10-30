@@ -79,7 +79,7 @@ export default function useContent() {
     } else if (contentType === "spl") {
       title = "Program Library";
     } else if (contentType === "started") {
-      title = "Getting Started with Solana";
+      title = "Getting Started with BNBChain";
     } else if (contentType === "sdk") {
       title = "SDKs & Frameworks";
     } else {
