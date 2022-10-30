@@ -1,7 +1,6 @@
 import '../style.css';
 
 import { AppWrapper } from '../context/AppContext';
-import '@solana/wallet-adapter-react-ui/styles.css';
 
 import { Web3ReactProvider } from '@web3-react/core'
 import { Web3Provider } from '@ethersproject/providers'

@@ -1,5 +1,4 @@
 import { Container } from '../../components/layout';
-import fetcher from '../../utils/fetcher';
 import dynamic from 'next/dynamic';
 import { loadNewsletter } from "../../lib/load-newsletter";
 
@@ -7,7 +6,7 @@ const PublicationsComponent = dynamic(() => import('../../components/publication
 
 export async function getStaticProps() {
   
-  const  response = await loadNewsletter()
+  const  response = await loadNewsletter();
   
   const lastNewsletter = response.shift();
 

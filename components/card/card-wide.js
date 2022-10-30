@@ -27,7 +27,7 @@ function CardWide({ content, mode }) {
   const imageUrl = defineImage(content);
 
   let audioPlayer = '';
-  if (content.Url) audioPlayer = content.Url.includes('solanalabs-twitter-spaces');
+  if (content.Url) audioPlayer = content.Url.includes('bnbchain-twitter-spaces');
 
   function actionButton() {
     if (content.Url && content.Url.includes('youtube')) {
@@ -41,7 +41,7 @@ function CardWide({ content, mode }) {
           </Link>
         </div>
       );
-    } else if (content.Url && content.Url.includes('solanalabs-twitter-spaces')) {
+    } else if (content.Url && content.Url.includes('bnbchain-twitter-spaces')) {
       return (
         <div>
           <button

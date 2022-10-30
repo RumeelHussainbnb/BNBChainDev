@@ -35,4 +35,5 @@ yarn-error.log*
 
 .idea
 .env.local
+.env
 .sentryclirc
