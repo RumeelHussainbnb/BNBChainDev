@@ -45,7 +45,7 @@ function CardRegular({ content, mode, editContent, closeSearch }) {
           </Link>
         </div>
       );
-    } else if (content.Url.includes('bnbchain-twitter-spaces')) {
+    } else if (content.Url.includes('solanalabs-twitter-spaces')) {
       return (
         <div>
           <button

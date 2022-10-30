@@ -58,7 +58,7 @@ export default function CourseContent({ content }) {
   const metaTags = {
     title: `BNBChainDev - ${content.title}`,
     description: content.description,
-    url: `${process.env.HOME_URL}/newsletters/${content.id}`,
+    url: `${process.env.HOME_URL}//newsletters/${content.id}`,
     shouldIndex: true
   };
 

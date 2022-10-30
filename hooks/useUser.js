@@ -1,5 +1,6 @@
 import useSWR from "swr";
 import fetcher from "../utils/fetcher";
+//import { useWallet } from "@solana/wallet-adapter-react";
 import Web3 from "web3";
 import Web3Modal from "web3modal";
 import { ethers } from "ethers";

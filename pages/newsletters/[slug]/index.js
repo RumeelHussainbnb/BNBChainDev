@@ -64,11 +64,11 @@ export default function Article({ content }) {
             <h3 className="mt-0 tracking-wide text-gray-500 dark:text-gray-400">
               <a
                 className="tracking-wide text-gray-500 no-underline hover:text-blue-400 dark:text-gray-400 dark:hover:text-blue-500"
-                href="https://twitter.com/Cryptar2"
+                href="https://twitter.com/rumeelhussain"
                 target="_blank"
                 rel="noreferrer"
               >
-                by {content.Author}
+                by Rumeel Hussain
               </a>
               {' · '}
               <span>{content.PublishedAt}</span>

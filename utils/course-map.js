@@ -35,7 +35,7 @@ export const modules = [
     //   link: '/course/token-swap'
     // },
     // {
-    //   title: 'Create NFT using BNB smart chain',
+    //   title: 'Create Solana NFTs With Metaplex',
     //   link: '/course/nfts-with-metaplex'
     // }
   ],

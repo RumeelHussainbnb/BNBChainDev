@@ -5,6 +5,7 @@
   env:{
     HOME_URL: process.env.SITE_URL,
   },
+  basePath: "/library",
   swcMinify: true,
   reactStrictMode: true,
   images: {
@@ -46,7 +47,7 @@
       }
     ];
   }
-};
+});
 
 
 module.exports = moduleExports;

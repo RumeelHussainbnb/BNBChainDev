@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://main.d1aos5rwqljdla.amplifyapp.com
+Host: undefined
 
 # Sitemaps
-Sitemap: https://main.d1aos5rwqljdla.amplifyapp.com/sitemap.xml
+Sitemap: undefined/sitemap.xml
