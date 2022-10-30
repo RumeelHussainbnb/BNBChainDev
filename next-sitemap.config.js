@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 const config = {
-    siteUrl: 'https://main.d1aos5rwqljdla.amplifyapp.com',
+    siteUrl: process.env.SITE_URL,
     generateRobotsTxt: true // (optional),
     // ...other options
   };
