@@ -5,10 +5,6 @@
   env:{
     HOME_URL: process.env.SITE_URL,
   },
-<<<<<<< HEAD
-=======
-  
->>>>>>> ed034369c5d7c7ee4577e4c5e838a944f444a153
   swcMinify: true,
   reactStrictMode: true,
   images: {
