@@ -20,7 +20,7 @@ services:
   backend:
     image: rumeelhussain12/backend:latest
     ports:
-      - "8001:8001"
+      - "3001:3001"
     environment:
       MONGO_DB_ADDR: mongo:27017
     restart: always
