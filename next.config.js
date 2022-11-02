@@ -34,7 +34,8 @@
       'blog.neodyme.io',
       'lh4.googleusercontent.com',
       'www.jpmti2016.com',
-      'www.crossmint.io'
+      'www.crossmint.io',
+      'binance.ghost.io'
     ],
     formats: ['image/avif', 'image/webp']
   },

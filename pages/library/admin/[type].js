@@ -6,9 +6,8 @@ const PublicationsComponent = dynamic(() =>
   import("../../../components/publications")
 );
 
-export default function ContentAdmin({}) {
+export default function ContentAdmin({ }) {
   const { data = [], type = "", isLoading } = useGetContentByStatus();
-
   const metaTags = {
     title: "BNB Chain - Library Admin",
     description: "Library Admin",

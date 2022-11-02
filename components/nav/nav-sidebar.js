@@ -15,6 +15,7 @@ import PropTypes from 'prop-types';
 import { memo, useEffect, useState } from 'react';
 import useUser from '../../hooks/useUser';
 import fetch from "../../utils/fetcher";
+import { useAppDispatch, useAppState } from '../../context/AppContext';
 
 const navigation = [
   {
@@ -158,6 +159,14 @@ const categories = [
   {
     name: 'Inactive',
     href: '/library/admin/inactive'
+  },
+  {
+    name: 'Post NewsLetter',
+    href: '/library/admin/newsletter/post'
+  },
+  {
+    name: 'Post tweet',
+    href: '/library/admin/tweet/post'
   }
 ];
 
@@ -182,16 +191,21 @@ function NavSidebar({ closeMobileMenu, showButton = 0, publicKey }) {
   const [isAdmin, setisAdmin] = useState(false);
   const [buttonsVisible, setButtonsVisible] = useState(showButton);
   const { user, isAdmin_ = true, connected, error } = useUser();
+  const appState = useAppState();
+  const appDispatch = useAppDispatch();
+
 
 
   useEffect(() => {
 
     const fetchData = async () => {
       // const data = await fetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}/user/${window.sessionStorage.getItem('PublicKey')}`);
-      const data = await fetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}/user/${publicKey}`);
+      let key = localStorage.getItem("PublicKey")
+      const data = await fetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}/user/${appState.publicKey ? appState.publicKey : key}`);
       const admin = data?.Role === "admin" ? true : false;
+      await appDispatch({ type: 'handleAdminMode', payload: admin });
+      localStorage.setItem("handleAdminMode", admin);
       setisAdmin(admin);
-
     }
 
     fetchData().catch("Catch error ", console.error);
@@ -355,7 +369,7 @@ function NavSidebar({ closeMobileMenu, showButton = 0, publicKey }) {
           </p>
           <div className="mt-2 space-y-1" aria-labelledby="communities-headline">
             {categories.map(item => {
-              if ((item.name === 'Submitted' || item.name === 'Inactive') && isAdmin == false) {
+              if ((item.name === 'Submitted' || item.name === 'Inactive' || item.name === "Post NewsLetter" || item.name === "Post tweet") && appState.isAdminMode == false) {
                 return;
               }
 

@@ -51,12 +51,14 @@ function TopBar({ setSearch, search, childrens }) {
       const accounts = await provider.send("eth_requestAccounts", []);
 
       const { name, chainId } = await provider.getNetwork();
+      await appDispatch({ type: 'handleWalletConnection', payload: true });
+      await appDispatch({ type: 'savePublicKey', payload: accounts[0] });
 
       setNetwork(name);
       setChainId(chainId);
       setPublickey(accounts[0]);
       setConnected(true);
-      window.sessionStorage.setItem("PublicKey", accounts[0]);
+      localStorage.setItem("PublicKey", accounts[0]);
       //setisAdmin(true);
       setShowButtons(prev => prev + 1);
 
@@ -64,6 +66,7 @@ function TopBar({ setSearch, search, childrens }) {
 
     } else {
       setConnected(false);
+      await appDispatch({ type: 'handleWalletConnection', payload: false });
       setMsg("Install MetaMask");
     }
 
@@ -179,7 +182,7 @@ function TopBar({ setSearch, search, childrens }) {
                     {/*  Profile Button */}
 
                     <div className="hidden lg:flex">
-                      {connected ? (
+                      {appState.isConnectedToWallet ? (
                         <Menu as="div" className="relative flex-shrink-0">
                           <div>
                             <Menu.Button className="flex rounded-full hover:outline-none hover:ring-2 hover:ring-green-500 hover:ring-offset-2">
@@ -238,6 +241,13 @@ function TopBar({ setSearch, search, childrens }) {
                                       setPublickey(null);
                                       setConnected(false);
                                       setShowButtons(false);
+                                      await appDispatch({ type: 'handleWalletConnection', payload: false });
+                                      await appDispatch({ type: 'savePublicKey', payload: "" });
+                                      await appDispatch({ type: 'handleAdminMode', payload: false });
+
+                                      localStorage.removeItem("handleWalletConnection")
+                                      localStorage.removeItem("handleAdminMode")
+                                      localStorage.removeItem("PublicKey")
                                     }
                                   }>
                                     <CogIcon
