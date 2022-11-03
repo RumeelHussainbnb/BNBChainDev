@@ -24,7 +24,7 @@ const Submit = (metaTags) => {
         await fetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}/tweets/post`, {
             method: "POST",
             headers: {
-                "Content-type": "application/json"
+                "Content-Type": "application/json"
             },
             body: JSON.stringify({
                 "id": data.id,
