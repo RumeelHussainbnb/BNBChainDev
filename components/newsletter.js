@@ -65,10 +65,10 @@ export default function Newsletter() {
             <div className="relative">
               <div className="sm:text-center">
                 <h2 className="text-3xl font-extrabold text-white tracking-tight sm:text-4xl">
-                  SolDev Newsletter
+                  BNB Chain Newsletter
                 </h2>
                 <p className="mt-6 mx-auto max-w-2xl text-lg text-yellow-200">
-                  A free developer-focused weekly newsletter with SolDev content
+                  A free developer-focused weekly newsletter with BNB Chain content
                   library updates, ecosystem news, and other vital information
                   for developers.
                 </p>

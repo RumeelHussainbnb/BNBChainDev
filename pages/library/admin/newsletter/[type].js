@@ -191,7 +191,7 @@ const Submit = (metaTags) => {
                                             className="py-3 px-4 block w-full shadow-sm focus:ring-yellow-500 focus:border-yellow-500 border border-gray-300 rounded-md dark:bg-gray-400 dark:border-gray-500 dark:text-gray-800"
                                         />
                                         <p className="mt-2 text-sm text-gray-500 dark:text-gray-500">
-                                            Brief description about the content. ~5000 characters
+                                            Brief description about the content. ~20000 characters
                                         </p>
                                     </div>
                                 </div>
