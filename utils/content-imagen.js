@@ -7,7 +7,7 @@ export default function defineImage(content) {
   if (content.Img) {
     return content.Img;
   } else if (content.ContentType === 'newsletters') {
-    return '/Newsletter-new.svg';
+    return '/Weekly_Report.jpg';
   }else if (content.ContentType === 'threads') {
     return '/twitter-placeholder.webp';
   } else if (content.Url && content.Url.includes('twitter') && content.ContentType === 'podcasts') {

@@ -171,10 +171,10 @@ const categories = [
 ];
 
 const courses = [
-  {
+ /* {
     name: 'Intro to BNBChain',
     href: '/course'
-  },
+  },*/
   {
     name: 'BNBChain 101',
     href: '/course'
