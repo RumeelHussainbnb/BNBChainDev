@@ -6,6 +6,6 @@ RUN npm run build
 
 EXPOSE 8000
 
-ENV NODE_ENV dev
+ENV NODE_ENV production
 
-CMD [ "npm", "run", "dev"]
+CMD [ "npm", "run", "start"]
