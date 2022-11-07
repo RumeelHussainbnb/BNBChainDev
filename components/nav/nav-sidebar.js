@@ -129,8 +129,7 @@ const categories = [
   },
   {
     name: 'Tools',
-    href: 'https://nodereal.io/bnb-dev-tools'
-    /*'/library/tools'*/
+    href: '/library/tools'
   },
   {
     name: 'Implementations',

@@ -110,18 +110,18 @@ function TopBar({ setSearch, search, childrens }) {
                   <div className="hidden sm:inline-flex">
                     <Link href="/" passHref>
                       <a className="flex content-center">
-                        {mode === 'light' && (
-                          <Image src="/logowhite-2.svg" alt="BNBChainDev Logo" height="50" width="120" />
+                      {mode === 'light' && (
+                          <Image src="/devlogolight.png" alt="BNBChainDev Logo" height="60px" width="200px" />
                         )}
                         {mode === 'dark' && (
-                          <Image src="/logowhite.svg" alt="BNBChainDev Logo" height="50" width="120" />
+                          <Image src="/devlogodark.png" alt="BNBChainDev Logo" height="60px" width="200px" />
                         )}
                       </a>
                     </Link>
                   </div>
 
                   {/* Search Bar */}
-                  <Search setSearch={setSearch} />
+                  {/*<Search setSearch={setSearch} />*/}
 
                   {/*  Mobile Menu, only visible in small screens*/}
                   <div className="flex items-center pl-2 lg:absolute lg:inset-y-0 lg:right-0 lg:hidden">
@@ -141,7 +141,7 @@ function TopBar({ setSearch, search, childrens }) {
                     <div className="hidden md:flex">
                       <Menu as="div" className="relative ml-5 flex-shrink-0">
                         <div>
-                          <Menu.Button className="flex rounded-full hover:outline-none hover:ring-2 hover:ring-green-500 hover:ring-offset-2">
+                          <Menu.Button className="flex rounded-full hover:outline-none hover:ring-2 hover:ring-gray-500 hover:ring-offset-2">
                             <span className="sr-only">Open Theme menu</span>
                             <ColorSwatchIcon className="h-7 w-7 text-gray-600 hover:opacity-80 dark:text-gray-300" />
                           </Menu.Button>
@@ -185,15 +185,26 @@ function TopBar({ setSearch, search, childrens }) {
                       {appState.isConnectedToWallet ? (
                         <Menu as="div" className="relative flex-shrink-0">
                           <div>
-                            <Menu.Button className="flex rounded-full hover:outline-none hover:ring-2 hover:ring-green-500 hover:ring-offset-2">
+                            <Menu.Button className="flex rounded-full hover:outline-none hover:ring-2 hover:ring-gray-500 hover:ring-offset-2">
                               <span className="sr-only">Open user menu</span>
-                              <Image
-                                className="rounded-full"
-                                src="/logowhite-2.svg"
-                                height="32px"
-                                width="32px"
-                                alt="avatar"
-                              />
+                              {mode === 'light' && (
+                                  <Image
+                                  className="rounded-full"
+                                  src="/avatar-light.png"
+                                  height="28px"
+                                  width="32px"
+                                  alt="avatar"
+                                />
+                              )}
+                              {mode === 'dark' && (
+                                  <Image
+                                  className="rounded-full"
+                                  src="/avatar-dark.png"
+                                  height="28px"
+                                  width="32px"
+                                  alt="avatar"
+                                />
+                              )}
                             </Menu.Button>
                           </div>
                           <Transition
@@ -265,7 +276,7 @@ function TopBar({ setSearch, search, childrens }) {
                         </Menu>
                       ) : (
                         <div className="items-center">
-                          <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" id="connectButton" onClick={
+                          <button className="bg-gradient-to-r from-gray-800 to-gray-600 hover:to-yellow-600 text-white font-bold py-2 px-4 rounded" id="connectButton" onClick={
                             connectButton
                           }>Connect</button>
                         </div>

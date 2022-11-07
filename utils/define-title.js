@@ -18,7 +18,9 @@ export default function defineTitle(contentType, data = []) {
     return "Getting Started with BNBChain";
   } else if (contentType === "sdk") {
     return "SDKs & Frameworks";
-  } else {
+  } else if (contentType === "ama") {
+    return "AMA";
+  }else {
     // Capitalize the first char
     return contentType.charAt(0).toUpperCase() + contentType.slice(1);
   }
